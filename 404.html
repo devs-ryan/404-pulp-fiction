@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Error 404 - Not Found</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', sans-serif;
+        }
+        #title {
+            color: rgb(0, 0, 0);
+        }
+        #description {
+            color: rgb(55, 55, 55);
+            font-style: italic;
+        }
+        #video {
+            position: fixed;
+            z-index: -1;
+            width: 100%;
+            max-width: 620px;
+            margin: auto;
+            height: auto;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-30%);
+            max-height: 100vh;
+            border: 5px solid white;
+        }
+        span {
+            border-radius: 0.3rem;
+            padding: 0.3rem 0.3rem;
+            background-color: rgb(255, 198, 65);
+        }
+        #message {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            text-align: center;
+            padding-top: 10%;
+        }
+        #home-link {
+            margin-top: 3rem;
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        @media only screen and (min-width: 500px) {
+            #message {
+                position: fixed;
+                left: 0;
+                bottom: 10%;
+                padding-top: 0%;
+                transform: translateY(-50%);
+            }
+        }
+        @media only screen and (min-width: 920px) {
+            #message {
+                position: fixed;
+                left: 0;
+                top: 50%;
+                justify-content: flex-start;
+                text-align: left;
+                padding-left: 3rem;
+                padding-top: 0%;
+                transform: translateY(-50%);
+            }
+        }
+
+        @media only screen and (min-width: 1620px) {
+            #message {
+                padding-left: 10%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="message">
+        <h1 id="title"><span>
+            404 | Not Found
+        </span></h1>
+        <strong id="description"><span>
+            Whatever you were looking for, it's not here.
+        </span></strong>
+        <a id="home-link" href="#"><span>
+            &#x2190; Return Home
+        </span></a>
+    </div>
+    <img id="video" src="travolta-lost.gif" alt="John Travolta is lost">
+</body>
+</html>
